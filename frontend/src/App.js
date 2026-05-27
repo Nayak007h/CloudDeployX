@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://backend:5000/')
+    fetch("http://16.112.132.235:5000")
       .then(response => response.text())
       .then(data => setMessage(data));
   }, []);
